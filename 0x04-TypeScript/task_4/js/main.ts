@@ -1,17 +1,29 @@
-import * as CRUD from './crud';
+/// <reference path="./Cpp.ts" />
+/// <reference path="./Java.ts" />
+/// <reference path="./React.ts" />
 
+// Create and export constants for each subject
+export const cpp = new Subjects.Cpp();
+export const java = new Subjects.Java();
+export const react = new Subjects.React();
 
-const row: RowElement = {
-    firstName: "Guillaume",
-    lastName: "Salva"
-}
+export const cTeacher: Subjects.Teacher = {
+  firstName: 'John',
+  lastName: 'Doe',
+  experienceTeachingC: 10
+};
 
-const rowUdpated: RowElement = {
-    ...row,
-    age: 34
-}
+console.log('C++');
+cpp.setTeacher(cTeacher);
+console.log(cpp.getRequirements());
+console.log(cpp.getAvailableTeacher());
 
-const neRowID: RowID = CRUD.insertRow(row);
-const UpdateRow: RowID = CRUD.updateRow(rowUdpated);
-const deletetRow: RowID = CRUD.updateRow(neRowID, UpdateRow);
+console.log('Java');
+java.setTeacher(cTeacher);
+console.log(java.getRequirements());
+console.log(java.getAvailableTeacher());
 
+console.log('React');
+react.setTeacher(cTeacher);
+console.log(react.getRequirements());
+console.log(react.getAvailableTeacher());
