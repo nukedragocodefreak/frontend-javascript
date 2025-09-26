@@ -2,8 +2,8 @@ export interface Teacher {
     readonly firstName: string;
     readonly lastName: string;
     fullTimeEmployee: boolean;
-    yearsOfExperience?: number;
     location: string;
+    yearsOfExperience?: number;
     [key: string]: any; // index signature for additional properties
 }
 
