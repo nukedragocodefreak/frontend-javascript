@@ -77,3 +77,7 @@ class StudentClass implements IStudentClass {
     return this.firstName;
   }
 }
+
+export function isDirector(employee: DirectorInterface | TeacherInterface): employee is DirectorInterface {
+  return (employee as DirectorInterface).workDirectorTasks !== undefined;
+}
