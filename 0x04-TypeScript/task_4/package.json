@@ -12,6 +12,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "webpack-cli": "^6.0.1"
   }
 }
